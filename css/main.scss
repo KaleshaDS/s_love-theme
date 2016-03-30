@@ -1,0 +1,51 @@
+@import "styles/varmix";
+@import "styles/footer";
+@import "styles/navbar";
+
+*{
+	font-family: 'OpenSans-Condensed' Helvetica;
+}
+
+body{
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+@font-face {
+  font-family: "bebas___-webfont";
+  src: url("../font/bebas___-webfont.ttf");
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../font/HelveticaNeue.ttf");
+}
+
+.linea_pink{
+	height: 6em;
+	background-color: $light;
+	width: $hundred;
+	position: absolute;
+	z-index: -10;
+}
+.line{
+	background-color: $white !important;
+}
+#skills{
+	@include skills;
+}
+#blogs{
+	.titles{
+		@include titles;
+	}
+	.style-blog{
+		@include style_blogm;
+	}
+}
+#recent_works{
+	.titles{
+		@include titles;
+	}
+	.style-blog{
+		@include style_blogm;
+	}
+}
+

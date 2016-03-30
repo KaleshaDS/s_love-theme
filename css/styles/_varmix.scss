@@ -1,0 +1,74 @@
+/*Numericos*/
+$hundred: 100%;
+$ten: 10%;
+$five: 5%;
+$forty: 40%;
+$fifteen: 15px;
+
+/*colores*/
+$jamoncito: #E96441;
+$salmon: #D64B26;
+$light: rgba(233, 100, 65, 0.5);
+$white: white;
+$gray: #C6C4C4;
+
+/*MIXINS*/
+/*Titulos donde estan los iconos*/
+@mixin skills{ 
+	h2, button{
+		font-family: "bebas___-webfont" !important;
+        word-spacing: 4px;
+	}
+	h2{
+		color: $jamoncito;
+		font-size: 1.2em;
+	} /*botones naranjas*/
+	.btn-primary{
+		background-color: $jamoncito !important;
+		border-color: $jamoncito !important;
+		&:hover{
+			background-color: $salmon !important;
+		}
+	}
+}
+/*Titulos de miniaturas de blog*/
+@mixin titles{
+	h3{
+		color: $jamoncito;
+		display: inline-block;
+		font-family: "bebas___-webfont" !important;
+	}
+	.image{
+		background-image: url(../images/heading-bg.png);
+		background-repeat: repeat-x;
+		width: 100%;
+		float: right;
+		height: 1em;
+		margin-top: 1em;
+	}
+}
+/*Estilos de la miniaturas del blog*/
+@mixin style_blogm{
+	margin-top: $fifteen;
+	margin-bottom: $five;
+	img{
+		width: $hundred;
+	}
+	.fblog{
+		width: $hundred;
+		padding: $five 5px $five $ten;
+		margin-top: 5px;
+		border: 1px solid $gray;
+		border-top: none;
+		h6, h4{
+			font-family: "bebas___-webfont" !important;
+		}
+		h4{
+			color: $gray;
+		}
+		h6{
+			color: $jamoncito;
+		}
+
+	}
+}
