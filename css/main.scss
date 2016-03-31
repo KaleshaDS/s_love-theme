@@ -49,3 +49,39 @@ body{
 	}
 }
 
+#seccion_name{
+    color: $white;
+    background-color: $light;
+    .base {
+        background-color: $white;
+    }
+ }
+.bg-jam{
+	background-color: $jamoncito;
+	font-family: "bebas___-webfont" !important;
+}
+
+.txt-jam{
+	color: $jamoncito;
+	font-family: "bebas___-webfont" !important;}
+
+.formulario{
+	position: relative;
+	bottom: 9em;
+	left: 2em;
+}
+.formulario
+	input{
+		margin-bottom: 0.5em;
+		border: 1px solid $salmon
+	}
+.blog-img{
+	position: relative;
+	right:20px;
+}
+.bg-gray{
+	background-image: url('../images/quote_bg.png');
+	width: 100%;
+	padding: 1em;
+	margin: 3em 1em;
+}
